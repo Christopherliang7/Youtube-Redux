@@ -44,10 +44,11 @@ describe('Action dispatchers', function() {
       expect(changeVideoList.firstCall.returnValue.type).to.equal('CHANGE_VIDEO_LIST');
     });
     it('should return an object with a "videos" key equal to the videos parameter', function() {
+      console.log('dummydata: ', dummyData);
       expect(changeVideoList.firstCall.returnValue.videos).to.equal(dummyData);
     });
   });
-  describe('handleVideoSearch', function() {
+  xdescribe('handleVideoSearch', function() {
     before(function () {
       mockReducer.reset();
       changeVideo.reset();
