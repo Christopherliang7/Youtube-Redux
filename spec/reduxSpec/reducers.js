@@ -51,6 +51,8 @@ describe('reducers', function() {
 
   describe('root reducer', function() {
     it('should be a function that accepts a state and an action.', function() {
+      console.log(rootReducer);
+      console.log(this);
       expect(rootReducer.bind(this)).to.throw();
       expect(rootReducer.bind(this, {
         videoList: [],

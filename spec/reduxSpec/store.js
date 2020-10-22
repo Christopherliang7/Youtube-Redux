@@ -12,6 +12,7 @@ describe('store', function() {
     expect(store.getState().currentVideo).to.be.null;
   });
   it('should have a state with a .videoList field', function() {
+    console.log('store:', store);
     expect(store.getState().videoList).to.be.an('array');
   });
   it('should have Redux Thunk applied as middleware', function() {

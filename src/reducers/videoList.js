@@ -3,11 +3,11 @@ import Redux from 'redux';
 
 // var InitialState = exampleVideoData;
 
-var videoListReducer = (state, action) => {
+var videoListReducer = (state = [], action) => {
   //TODO: define a reducer for the videoList field of our state.
   // if action.type === 'VIDEOS',
   // return action.result
-  if (action.type === 'VIDEOS') {
+  if (action.type === 'CHANGE_VIDEO_LIST') {
     return action.videos;
   } else {
     return state;
