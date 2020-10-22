@@ -4,6 +4,8 @@ import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
 import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
 import VideoListContainer from '../containers/VideoListContainer.js';
+import SearchContainer from '../containers/SearchContainer.js';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -46,7 +48,7 @@ class App extends React.Component {
       <div>
         <nav className="navbar">
           <div className="col-md-6 col-md-offset-3">
-            <Search getYouTubeVideos={this.getYouTubeVideos}/>
+            <SearchContainer/>
           </div>
         </nav>
         <div className="row">

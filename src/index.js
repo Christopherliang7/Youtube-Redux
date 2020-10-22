@@ -11,7 +11,9 @@ import exampleVideoData from './data/exampleVideoData.js';
 //TODO: Use the Provider component to make your store available to
 //  the rest of your app.
 
-
+store.subscribe(() => {
+  console.log("What is our state?", store.getState());
+})
 store.dispatch({type:"CHANGE_VIDEO", video:exampleVideoData[0]});
 store.dispatch({type:"CHANGE_VIDEO_LIST", videos: exampleVideoData})
 

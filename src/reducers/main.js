@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
-import currentVideo from './currentVideo.js';
-import videoList from './videoList.js';
+import currentVideoReducer from './currentVideo.js';
+import videoListReducer from './videoList.js';
 
 // Pass in object of reducers into Reduxt.combineReducers
-var rootReducer = combineReducers({videoList:videoList, currentVideo: currentVideo});
+
+var rootReducer = combineReducers({videoList:videoListReducer, currentVideo: currentVideoReducer});
 
 //combineReducers({videos: videoList, cVideo: currentVideo});
 
